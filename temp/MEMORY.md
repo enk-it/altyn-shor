@@ -8,3 +8,4 @@
 - Реализован статический лендинг в `src/`: HTML-секции по `specs/01-structure.md`, CSS reset/переменные/адаптив по `specs/00-styles.md` и `specs/02-color-scheme.md`, JS для compact header, плавных якорей и карусели.
 - Проверка: `node --check src/script.js` проходит без ошибок.
 - После добавления ассетов в `src/static` сайт переведен с `placehold.co` на локальные изображения: `logo.png`, `shor.jpg`, `houses.jpg`, `shor-2.jpg`, `shor-scheme.jpg`.
+- После обновления `specs/01-structure.md` лендинг приведен к новой scroll-first структуре: главная, номера и цены, инфраструктура, досуг, питание, галерея, как добраться, отзывы, контакты/бронирование, новости и акции.

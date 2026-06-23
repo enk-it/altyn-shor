@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Алтын-шор | Группа гостиниц</title>
+    <title>Алтын-шор | Шерегеш</title>
     <meta
       name="description"
-      content="Одностраничный лендинг группы гостиниц Алтын-шор."
+      content="Одностраничный лендинг гостиничного проекта Алтын-шор в Шерегеше."
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -19,37 +19,39 @@
           </span>
           <span class="brand-text">
             <span class="brand-name">Алтын-шор</span>
-            <span class="brand-subtitle">38 гостиничных объектов</span>
+            <span class="brand-subtitle">Шерегеш</span>
           </span>
         </a>
 
         <nav class="site-nav" aria-label="Навигация по странице">
-          <a href="#about">Общая информация</a>
-          <a href="#gallery">Карусель</a>
-          <a href="#map">Карта</a>
-          <a href="#investors">Инвесторам</a>
-          <a href="#pricing">Прайс</a>
-          <a href="#contacts">Контакты</a>
+          <a href="#home">Главная</a>
+          <a href="#rooms">Номера</a>
+          <a href="#infrastructure">Услуги</a>
+          <a href="#leisure">Досуг</a>
+          <a href="#food">Питание</a>
+          <a href="#gallery">Галерея</a>
+          <a href="#route">Как добраться</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#booking">Бронирование</a>
+          <a href="#news">Акции</a>
         </nav>
       </div>
     </header>
 
     <main id="top">
-      <section class="hero section" id="about">
+      <section class="hero section" id="home">
         <div class="section-grid hero-grid">
           <div class="hero-content">
-            <p class="section-kicker">Группа гостиниц</p>
-            <h1>Алтын-шор</h1>
+            <p class="section-kicker">Шерегеш · Алтын-шор</p>
+            <h1>Отдых в горах рядом с природой</h1>
             <p class="section-lead">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
               facilisis, lacus id posuere hendrerit, justo lacus laoreet nunc,
               id dictum arcu magna at lorem.
             </p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#pricing">Смотреть цены</a>
-              <a class="button button-secondary" href="#investors"
-                >Для инвесторов</a
-              >
+              <a class="button button-primary" href="#booking">Забронировать</a>
+              <a class="button button-secondary" href="#rooms">Смотреть номера</a>
             </div>
           </div>
 
@@ -65,21 +67,193 @@
               </div>
               <div>
                 <span class="stat-number">24/7</span>
-                <span class="stat-label">прием гостей</span>
+                <span class="stat-label">связь с гостями</span>
               </div>
               <div>
-                <span class="stat-number">1</span>
-                <span class="stat-label">единая сеть</span>
+                <span class="stat-number">4</span>
+                <span class="stat-label">сезона отдыха</span>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div class="home-details">
+          <article class="feature-block">
+            <p class="section-kicker">О Шерегеше</p>
+            <h2>Горный курорт для активного отдыха</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              aliquet, magna id fermentum volutpat, ipsum justo volutpat mi.
+            </p>
+          </article>
+          <article class="feature-block">
+            <p class="section-kicker">Об Алтын-шор</p>
+            <h2>Единая территория размещения</h2>
+            <p>
+              Suspendisse sit amet tortor vitae lorem tristique cursus. Sed
+              vitae lectus varius, tempus odio nec, interdum justo.
+            </p>
+          </article>
+          <article class="feature-block developer-block">
+            <p class="section-kicker">О застройщике</p>
+            <h2>Проект с понятной логикой развития</h2>
+            <p>
+              Curabitur convallis velit id ipsum tincidunt, et luctus tortor
+              pulvinar. Etiam vitae lectus vel lacus porttitor.
+            </p>
+          </article>
+        </div>
+
+        <form class="quick-booking" aria-label="Форма быстрого поиска">
+          <label>
+            <span>Заезд</span>
+            <input type="date" name="arrival" />
+          </label>
+          <label>
+            <span>Выезд</span>
+            <input type="date" name="departure" />
+          </label>
+          <label>
+            <span>Гости</span>
+            <select name="guests">
+              <option>1 гость</option>
+              <option>2 гостя</option>
+              <option>3 гостя</option>
+              <option>4 гостя</option>
+            </select>
+          </label>
+          <button class="button button-primary" type="submit">Найти номер</button>
+        </form>
+      </section>
+
+      <section class="section pricing-section" id="rooms">
+        <div class="section-heading">
+          <p class="section-kicker">Номера и цены</p>
+          <h2>Категории размещения</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+            quis risus ac augue vestibulum efficitur.
+          </p>
+        </div>
+
+        <div class="room-grid">
+          <article class="room-card">
+            <img src="./static/houses.jpg" alt="Категория стандарт" />
+            <div>
+              <h3>Стандарт</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                ultrices eros ac tortor gravida.
+              </p>
+              <span class="room-price">от 3 200 ₽ / ночь</span>
+            </div>
+          </article>
+          <article class="room-card">
+            <img src="./static/shor-2.jpg" alt="Категория люкс" />
+            <div>
+              <h3>Люкс</h3>
+              <p>
+                Praesent tincidunt, lectus sed pulvinar faucibus, ipsum risus
+                mollis neque, non luctus leo erat.
+              </p>
+              <span class="room-price">от 7 900 ₽ / ночь</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="infrastructure">
+        <div class="section-heading">
+          <p class="section-kicker">Инфраструктура и услуги</p>
+          <h2>Всё на территории</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae
+            lectus varius, tempus odio nec, interdum justo.
+          </p>
+        </div>
+
+        <div class="info-grid">
+          <article class="info-card">
+            <h3>Рестораны</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </article>
+          <article class="info-card">
+            <h3>SPA</h3>
+            <p>Praesent tincidunt, lectus sed pulvinar faucibus.</p>
+          </article>
+          <article class="info-card">
+            <h3>Бассейн</h3>
+            <p>Curabitur convallis velit id ipsum tincidunt.</p>
+          </article>
+          <article class="info-card">
+            <h3>Пляж</h3>
+            <p>Etiam vitae lectus vel lacus porttitor consequat.</p>
+          </article>
+          <article class="info-card">
+            <h3>Спортзал</h3>
+            <p>Donec aliquet magna id fermentum volutpat.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section leisure-section" id="leisure">
+        <div class="section-grid">
+          <div class="section-heading inline-heading">
+            <p class="section-kicker">Развлечения и досуг</p>
+            <h2>Программы для детей и взрослых</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              consequat lorem vel lectus congue, vitae ultricies nunc cursus.
+            </p>
+          </div>
+          <div class="stack-list">
+            <article>
+              <h3>Анимация</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </article>
+            <article>
+              <h3>Экскурсии</h3>
+              <p>Donec aliquet, magna id fermentum volutpat, ipsum justo.</p>
+            </article>
+            <article>
+              <h3>Мероприятия</h3>
+              <p>Suspendisse sit amet tortor vitae lorem tristique cursus.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section food-section" id="food">
+        <div class="section-heading">
+          <p class="section-kicker">Питание</p>
+          <h2>Рестораны, бары и форматы питания</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            ultrices eros ac tortor gravida, vitae tempor ante aliquam.
+          </p>
+        </div>
+
+        <div class="food-layout">
+          <img src="./static/houses.jpg" alt="Территория с объектами питания" />
+          <div class="food-card">
+            <h3>Система питания</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              facilisis lacus id posuere hendrerit.
+            </p>
+            <ul class="clean-list">
+              <li>Рестораны на территории</li>
+              <li>Бары и сезонные точки</li>
+              <li>Формат «всё включено»</li>
+            </ul>
           </div>
         </div>
       </section>
 
       <section class="section" id="gallery">
         <div class="section-heading">
-          <p class="section-kicker">Карусель</p>
-          <h2>Изображения объектов</h2>
+          <p class="section-kicker">Галерея</p>
+          <h2>Фото и видео территории</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae
             lectus varius, tempus odio nec, interdum justo.
@@ -98,25 +272,19 @@
           <div class="carousel-viewport">
             <div class="carousel-track" data-carousel-track>
               <figure class="carousel-slide">
-                <img
-                  src="./static/houses.jpg"
-                  alt="Гостиничные дома Алтын-шор"
-                />
-                <figcaption>Lorem ipsum dolor sit amet</figcaption>
+                <img src="./static/houses.jpg" alt="Гостиничные дома Алтын-шор" />
+                <figcaption>Номера и территория</figcaption>
               </figure>
               <figure class="carousel-slide">
                 <img
                   src="./static/shor-2.jpg"
                   alt="Объект Алтын-шор на природной территории"
                 />
-                <figcaption>Consectetur adipiscing elit</figcaption>
+                <figcaption>Виды и окружение</figcaption>
               </figure>
               <figure class="carousel-slide">
-                <img
-                  src="./static/shor.jpg"
-                  alt="Вид территории Алтын-шор"
-                />
-                <figcaption>Integer facilisis lacus</figcaption>
+                <img src="./static/shor.jpg" alt="Вид территории Алтын-шор" />
+                <figcaption>Общая зона отдыха</figcaption>
               </figure>
             </div>
           </div>
@@ -132,100 +300,132 @@
         </div>
       </section>
 
-      <section class="section map-section" id="map">
+      <section class="section map-section" id="route">
         <div class="section-grid">
           <div class="section-heading inline-heading">
-            <p class="section-kicker">Карта</p>
-            <h2>Расположение объектов</h2>
+            <p class="section-kicker">Как добраться</p>
+            <h2>Карта и маршрут</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               aliquet, magna id fermentum volutpat, ipsum justo volutpat mi.
             </p>
+            <div class="route-notes">
+              <p><strong>На автомобиле:</strong> lorem ipsum dolor sit amet.</p>
+              <p><strong>Аэропорт:</strong> consectetur adipiscing elit.</p>
+              <p><strong>Вокзал:</strong> sed vitae lectus varius.</p>
+            </div>
           </div>
-          <div class="map-frame">
+          <div class="map-frame interactive-map">
             <img
               src="./static/shor-scheme.jpg"
               alt="Схема расположения объектов Алтын-шор"
             />
+            <span class="map-marker marker-main">Алтын-шор</span>
+            <span class="map-marker marker-route">Маршрут</span>
           </div>
         </div>
       </section>
 
-      <section class="section investors-section" id="investors">
+      <section class="section reviews-section" id="reviews">
         <div class="section-heading">
-          <p class="section-kicker">Инвесторам</p>
-          <h2>Информация для инвесторов</h2>
+          <p class="section-kicker">Отзывы</p>
+          <h2>Мнения гостей</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             sit amet tortor vitae lorem tristique cursus.
           </p>
         </div>
 
-        <div class="info-grid">
-          <article class="info-card">
-            <h3>Портфель</h3>
+        <div class="review-grid">
+          <blockquote>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              ultrices eros ac tortor gravida, vitae tempor ante aliquam.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              facilisis lacus id posuere hendrerit.
             </p>
-          </article>
-          <article class="info-card">
-            <h3>Управление</h3>
+            <cite>Гость, январь</cite>
+          </blockquote>
+          <blockquote>
             <p>
               Praesent tincidunt, lectus sed pulvinar faucibus, ipsum risus
-              mollis neque, non luctus leo erat sit amet augue.
+              mollis neque, non luctus leo erat.
             </p>
-          </article>
-          <article class="info-card">
-            <h3>Развитие</h3>
+            <cite>Гость, март</cite>
+          </blockquote>
+          <blockquote>
             <p>
               Curabitur convallis velit id ipsum tincidunt, et luctus tortor
-              pulvinar. Etiam vitae lectus vel lacus porttitor.
+              pulvinar.
             </p>
-          </article>
+            <cite>Гость, июнь</cite>
+          </blockquote>
         </div>
       </section>
 
-      <section class="section pricing-section" id="pricing">
+      <section class="section booking-section" id="booking">
+        <div class="section-grid">
+          <div class="section-heading inline-heading">
+            <p class="section-kicker">Контакты / Бронирование</p>
+            <h2>Связаться и забронировать</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              consequat lorem vel lectus congue, vitae ultricies nunc cursus.
+            </p>
+            <address class="contact-list">
+              <a href="tel:+70000000000">+7 000 000-00-00</a>
+              <a href="mailto:info@example.com">info@example.com</a>
+              <span>Юридическая информация: lorem ipsum dolor sit amet.</span>
+            </address>
+          </div>
+
+          <form class="booking-form" aria-label="Онлайн-бронирование">
+            <label>
+              <span>Имя</span>
+              <input type="text" name="name" placeholder="Lorem ipsum" />
+            </label>
+            <label>
+              <span>Телефон</span>
+              <input type="tel" name="phone" placeholder="+7 000 000-00-00" />
+            </label>
+            <label>
+              <span>Категория</span>
+              <select name="room">
+                <option>Стандарт</option>
+                <option>Люкс</option>
+              </select>
+            </label>
+            <button class="button button-primary" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section news-section" id="news">
         <div class="section-heading">
-          <p class="section-kicker">Прайс</p>
-          <h2>Стоимость номеров</h2>
+          <p class="section-kicker">Новости и акции</p>
+          <h2>Специальные предложения и события</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
             quis risus ac augue vestibulum efficitur.
           </p>
         </div>
 
-        <div class="pricing-table" role="table" aria-label="Прайс на номера">
-          <div class="pricing-row pricing-head" role="row">
-            <span role="columnheader">Категория</span>
-            <span role="columnheader">Описание</span>
-            <span role="columnheader">Стоимость</span>
-          </div>
-          <div class="pricing-row" role="row">
-            <span role="cell">Стандарт</span>
-            <span role="cell">Lorem ipsum dolor sit amet</span>
-            <span role="cell">от 3 200 ₽</span>
-          </div>
-          <div class="pricing-row" role="row">
-            <span role="cell">Комфорт</span>
-            <span role="cell">Consectetur adipiscing elit</span>
-            <span role="cell">от 4 600 ₽</span>
-          </div>
-          <div class="pricing-row" role="row">
-            <span role="cell">Люкс</span>
-            <span role="cell">Integer facilisis lacus id posuere</span>
-            <span role="cell">от 7 900 ₽</span>
-          </div>
+        <div class="news-grid">
+          <article class="info-card">
+            <h3>Сезонное предложение</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </article>
+          <article class="info-card">
+            <h3>События курорта</h3>
+            <p>Donec aliquet, magna id fermentum volutpat, ipsum justo.</p>
+          </article>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer section" id="contacts">
+    <footer class="site-footer section">
       <div class="footer-grid">
         <div>
-          <p class="section-kicker">Контакты</p>
-          <h2>Алтын-шор</h2>
+          <p class="section-kicker">Алтын-шор</p>
+          <h2>Шерегеш</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
             consequat lorem vel lectus congue, vitae ultricies nunc cursus.

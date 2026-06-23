@@ -31,6 +31,12 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
   });
 });
 
+document.querySelectorAll("form").forEach((form) => {
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+  });
+});
+
 if (carousel) {
   const track = carousel.querySelector("[data-carousel-track]");
   const slides = Array.from(carousel.querySelectorAll(".carousel-slide"));
