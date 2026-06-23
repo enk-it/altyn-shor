@@ -1,8 +1,14 @@
 const header = document.querySelector("[data-header]");
 const carousel = document.querySelector("[data-carousel]");
+const mobileHeaderQuery = window.matchMedia("(max-width: 760px)");
 
 const updateHeaderState = () => {
   if (!header) {
+    return;
+  }
+
+  if (mobileHeaderQuery.matches) {
+    header.classList.remove("is-compact");
     return;
   }
 
@@ -11,6 +17,7 @@ const updateHeaderState = () => {
 
 updateHeaderState();
 window.addEventListener("scroll", updateHeaderState, { passive: true });
+mobileHeaderQuery.addEventListener("change", updateHeaderState);
 
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
   link.addEventListener("click", (event) => {
