@@ -1,6 +1,17 @@
 const header = document.querySelector("[data-header]");
 const carousel = document.querySelector("[data-carousel]");
 const mobileHeaderQuery = window.matchMedia("(max-width: 760px)");
+const menuToggle = document.querySelector("[data-menu-toggle]");
+const mobileDrawer = document.querySelector("[data-mobile-drawer]");
+
+const closeMobileMenu = () => {
+  if (!header || !menuToggle) {
+    return;
+  }
+
+  header.classList.remove("is-menu-open");
+  menuToggle.setAttribute("aria-expanded", "false");
+};
 
 const updateHeaderState = () => {
   if (!header) {
@@ -19,6 +30,13 @@ updateHeaderState();
 window.addEventListener("scroll", updateHeaderState, { passive: true });
 mobileHeaderQuery.addEventListener("change", updateHeaderState);
 
+if (header && menuToggle && mobileDrawer) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = header.classList.toggle("is-menu-open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+}
+
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
   link.addEventListener("click", (event) => {
     const targetId = link.getAttribute("href");
@@ -34,9 +52,18 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
     }
 
     event.preventDefault();
+    closeMobileMenu();
     target.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 });
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeMobileMenu();
+  }
+});
+
+mobileHeaderQuery.addEventListener("change", closeMobileMenu);
 
 document.querySelectorAll("form").forEach((form) => {
   form.addEventListener("submit", (event) => {

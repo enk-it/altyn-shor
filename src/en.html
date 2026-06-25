@@ -37,6 +37,38 @@
                     <a href="./en.html" aria-current="page">EN</a>
                     <a href="./zh.html">中文</a>
                 </div>
+                <button
+                    class="menu-toggle"
+                    type="button"
+                    data-menu-toggle
+                    aria-label="Open menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-drawer"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="mobile-drawer" id="mobile-drawer" data-mobile-drawer>
+                    <nav class="drawer-nav" aria-label="Mobile navigation">
+                        <a href="#home">Home</a>
+                        <a href="#rooms">Rooms</a>
+                        <a href="#infrastructure">Services</a>
+                        <a href="#leisure">Leisure</a>
+                        <a href="#food">Dining</a>
+                        <a href="#gallery">Gallery</a>
+                        <a href="#route">Route</a>
+                        <a href="#investors">Investors</a>
+                        <a href="#reviews">Reviews</a>
+                        <a href="#booking">Booking</a>
+                        <a href="#news">News</a>
+                    </nav>
+                    <div class="drawer-languages" aria-label="Language selection">
+                        <a href="./index.html">RU</a>
+                        <a href="./en.html" aria-current="page">EN</a>
+                        <a href="./zh.html">中文</a>
+                    </div>
+                </div>
             </div>
         </header>
 
@@ -405,6 +437,11 @@
                             Leave a request to receive launch and accommodation
                             details when they are published.
                         </p>
+                        <address class="contact-list">
+                            <a href="tel:+70000000000">+7 000 000-00-00</a>
+                            <a href="mailto:info@example.com">info@example.com</a>
+                            <span>Legal information will be published before launch.</span>
+                        </address>
                     </div>
                     <form class="booking-form" aria-label="Online request form">
                         <label><span>Name</span><input type="text" name="name" placeholder="Your name" /></label>
