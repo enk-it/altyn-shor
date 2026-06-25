@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Altyn-Shor | Sheregesh</title>
+        <meta
+            name="description"
+            content="A landing page for the Altyn-Shor all-season resort project in Sheregesh."
+        />
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <header class="site-header" data-header>
+            <div class="header-inner">
+                <a class="brand" href="#top" aria-label="Altyn-Shor, back to top">
+                    <span class="brand-mark" aria-hidden="true">
+                        <img src="./static/logo.png" alt="" />
+                    </span>
+                    <span class="brand-text">
+                        <span class="brand-name">Altyn-Shor</span>
+                        <span class="brand-subtitle">Sheregesh</span>
+                    </span>
+                </a>
+
+                <nav class="site-nav" aria-label="Page navigation">
+                    <a href="#rooms">Rooms</a>
+                    <a href="#infrastructure">Services</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#route">Route</a>
+                    <a href="#investors">Investors</a>
+                    <a href="#reviews">Reviews</a>
+                    <a href="#booking">Booking</a>
+                </nav>
+                <div class="language-switch" aria-label="Language selection">
+                    <a href="./index.html">RU</a>
+                    <a href="./en.html" aria-current="page">EN</a>
+                    <a href="./zh.html">中文</a>
+                </div>
+            </div>
+        </header>
+
+        <main id="top">
+            <section class="hero section" id="home">
+                <div class="section-grid hero-grid">
+                    <div class="hero-content">
+                        <p class="section-kicker">Sheregesh · Altyn-Shor</p>
+                        <h1>All-season resort on Mount Zelenaya</h1>
+                        <p class="section-lead">
+                            Altyn-Shor is a large-scale resort project in sector
+                            F of Sheregesh. It combines accommodation, wellness,
+                            leisure, mountain activities and convenient guest
+                            logistics.
+                        </p>
+                        <div class="hero-actions">
+                            <a class="button button-primary" href="#booking">Request details</a>
+                            <a class="button button-secondary" href="#rooms">View accommodation</a>
+                        </div>
+                    </div>
+
+                    <div class="hero-aside">
+                        <figure class="hero-image-card">
+                            <img src="./static/shor.jpg" alt="Altyn-Shor territory" />
+                        </figure>
+
+                        <div class="hero-panel" aria-label="Key project figures">
+                            <div>
+                                <span class="stat-number">54 ha</span>
+                                <span class="stat-label">development area</span>
+                            </div>
+                            <div>
+                                <span class="stat-number">38</span>
+                                <span class="stat-label">Sheregesh ski runs</span>
+                            </div>
+                            <div>
+                                <span class="stat-number">35 bn ₽</span>
+                                <span class="stat-label">estimated investment</span>
+                            </div>
+                            <div>
+                                <span class="stat-number">2038</span>
+                                <span class="stat-label">target horizon</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home-details">
+                    <article class="feature-block">
+                        <p class="section-kicker">About Sheregesh</p>
+                        <h2>A mountain resort for active travel</h2>
+                        <p>
+                            Sheregesh has 23 lifts, 38 ski runs and more than
+                            150 hotels and apart-hotels. Annual tourist flow is
+                            already about 1.7 million people and may reach
+                            3 million by 2030.
+                        </p>
+                    </article>
+                    <article class="feature-block">
+                        <p class="section-kicker">About Altyn-Shor</p>
+                        <h2>A single resort accommodation cluster</h2>
+                        <p>
+                            The project includes an apart-hotel, 4-star and
+                            5-star hotels, a sanatorium with a medical clinic
+                            and private chalets. The figure 38 refers to
+                            Sheregesh ski runs, not to hotels in the complex.
+                        </p>
+                    </article>
+                    <article class="feature-block developer-block">
+                        <p class="section-kicker">Project logic</p>
+                        <h2>Accommodation, wellness and leisure in one plan</h2>
+                        <p>
+                            The concept combines lodging, ski infrastructure,
+                            wellness facilities, culture, walking areas and
+                            summer recreation. The total room stock is planned
+                            at about 5,000 rooms.
+                        </p>
+                    </article>
+                </div>
+
+                <form class="quick-booking" aria-label="Quick search form">
+                    <label><span>Arrival</span><input type="date" name="arrival" /></label>
+                    <label><span>Departure</span><input type="date" name="departure" /></label>
+                    <label>
+                        <span>Guests</span>
+                        <select name="guests">
+                            <option>1 guest</option>
+                            <option>2 guests</option>
+                            <option>3 guests</option>
+                            <option>4 guests</option>
+                        </select>
+                    </label>
+                    <button class="button button-primary" type="submit">Find accommodation</button>
+                </form>
+            </section>
+
+            <section class="section pricing-section" id="rooms">
+                <div class="section-heading">
+                    <p class="section-kicker">Rooms and rates</p>
+                    <h2>Planned accommodation formats</h2>
+                    <p>
+                        The resort is planned for different stay scenarios:
+                        apartments, classic hotel rooms, wellness stays and
+                        private chalets.
+                    </p>
+                </div>
+
+                <div class="room-grid">
+                    <article class="room-card">
+                        <img src="./static/houses.jpg" alt="Premium apart-hotel" />
+                        <div>
+                            <h3>Apart-hotel No. 1</h3>
+                            <p>
+                                A flagship 15-storey first-stage building with
+                                642-804 apartments. Launch is planned for the
+                                2028-2029 season.
+                            </p>
+                            <span class="room-price">premium apartments</span>
+                        </div>
+                    </article>
+                    <article class="room-card">
+                        <img src="./static/shor-2.jpg" alt="Four-star hotel" />
+                        <div>
+                            <h3>4-star hotel</h3>
+                            <p>
+                                A classic 250-room hotel for family and
+                                comfortable stays near the core resort
+                                infrastructure.
+                            </p>
+                            <span class="room-price">250 rooms</span>
+                        </div>
+                    </article>
+                    <article class="room-card">
+                        <img src="./static/shor.jpg" alt="Five-star hotel" />
+                        <div>
+                            <h3>5-star hotel</h3>
+                            <p>
+                                A secluded premium hotel with 100 rooms, a high
+                                service level and a quiet natural setting.
+                            </p>
+                            <span class="room-price">100 rooms</span>
+                        </div>
+                    </article>
+                    <article class="room-card">
+                        <img src="./static/shor-scheme.jpg" alt="Sanatorium and clinic" />
+                        <div>
+                            <h3>Sanatorium and clinic</h3>
+                            <p>
+                                A wellness complex with an approximately
+                                2,000 m² medical clinic and a 100-bed
+                                rehabilitation center.
+                            </p>
+                            <span class="room-price">100 rehab beds</span>
+                        </div>
+                    </article>
+                    <article class="room-card">
+                        <img src="./static/houses.jpg" alt="Forest chalets" />
+                        <div>
+                            <h3>Forest chalets</h3>
+                            <p>
+                                Standalone guest houses in the forest area for
+                                private and longer stays.
+                            </p>
+                            <span class="room-price">private forest area</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section" id="infrastructure">
+                <div class="section-heading">
+                    <p class="section-kicker">Infrastructure and services</p>
+                    <h2>Everything within the resort area</h2>
+                    <p>
+                        The project includes restaurants, wellness services,
+                        medical facilities, sport venues and walking routes.
+                        More than 4 km of ski runs and a dedicated cableway are
+                        planned for active recreation.
+                    </p>
+                </div>
+
+                <div class="info-grid">
+                    <article class="info-card">
+                        <h3>Restaurants</h3>
+                        <p>A central restaurant, gastro hall and food points around the fair square.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>SPA</h3>
+                        <p>Russian steam room, Shor herbal sauna, hammam and Siberian spa rituals.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Medicine</h3>
+                        <p>A clinic, rehabilitation center and recovery programs for resort guests.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Waterfront</h3>
+                        <p>A planned natural water area for summer recreation near Mount Mustag.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Sports</h3>
+                        <p>Fitness, tennis, trampoline and esports centers.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section leisure-section" id="leisure">
+                <div class="section-grid">
+                    <div class="section-heading inline-heading">
+                        <p class="section-kicker">Leisure</p>
+                        <h2>Activities for adults and children</h2>
+                        <p>
+                            The resort is planned for year-round use: skiing and
+                            lifts in winter, walking routes, events and family
+                            activities in warmer seasons.
+                        </p>
+                    </div>
+                    <div class="stack-list">
+                        <article>
+                            <h3>Family programs</h3>
+                            <p>A kids club and activities for family stays.</p>
+                        </article>
+                        <article>
+                            <h3>Culture</h3>
+                            <p>A Shor culture museum and craft workshops in the ethnic village.</p>
+                        </article>
+                        <article>
+                            <h3>Events</h3>
+                            <p>A fair square, open-air cinema and walking boulevard over 2.5 km.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section food-section" id="food">
+                <div class="section-heading">
+                    <p class="section-kicker">Dining</p>
+                    <h2>Restaurants, bars and meal formats</h2>
+                    <p>
+                        The central restaurant is planned for the fair square,
+                        with panoramic glazing, natural cedar, wild stone and a
+                        terrace overlooking the mountains.
+                    </p>
+                </div>
+                <div class="food-layout">
+                    <img src="./static/houses.jpg" alt="Dining infrastructure area" />
+                    <div class="food-card">
+                        <h3>Dining system</h3>
+                        <p>Formats are planned for hotel guests, apartment residents, event visitors and day guests.</p>
+                        <ul class="clean-list">
+                            <li>Restaurants in the resort area</li>
+                            <li>Gastro hall and seasonal points</li>
+                            <li>All-inclusive format</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="gallery">
+                <div class="section-heading">
+                    <p class="section-kicker">Gallery</p>
+                    <h2>Territory and views</h2>
+                    <p>Visual materials of the resort territory, accommodation formats and natural surroundings.</p>
+                </div>
+                <div class="carousel" data-carousel>
+                    <button class="carousel-control carousel-control-prev" type="button" data-carousel-prev aria-label="Previous image">‹</button>
+                    <div class="carousel-viewport">
+                        <div class="carousel-track" data-carousel-track>
+                            <figure class="carousel-slide">
+                                <img src="./static/houses.jpg" alt="Altyn-Shor guest houses" />
+                                <figcaption>Accommodation and territory</figcaption>
+                            </figure>
+                            <figure class="carousel-slide">
+                                <img src="./static/shor-2.jpg" alt="Altyn-Shor natural territory" />
+                                <figcaption>Views and surroundings</figcaption>
+                            </figure>
+                            <figure class="carousel-slide">
+                                <img src="./static/shor.jpg" alt="Altyn-Shor recreation area" />
+                                <figcaption>Public recreation area</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <button class="carousel-control carousel-control-next" type="button" data-carousel-next aria-label="Next image">›</button>
+                    <div class="carousel-dots" data-carousel-dots aria-label="Slides"></div>
+                </div>
+            </section>
+
+            <section class="section map-section" id="route">
+                <div class="section-grid">
+                    <div class="section-heading inline-heading">
+                        <p class="section-kicker">Getting there</p>
+                        <h2>Map and route</h2>
+                        <p>
+                            Altyn-Shor is located in sector F of Sheregesh on
+                            Mount Zelenaya. A transport hub near Shoria-Grad and
+                            a feeder lift to sector F are planned.
+                        </p>
+                        <div class="route-notes">
+                            <p><strong>By car:</strong> access to sector F from Sheregesh.</p>
+                            <p><strong>Airport:</strong> planned 7 km from Sheregesh.</p>
+                            <p><strong>Transport hub:</strong> transfer via the planned station square.</p>
+                        </div>
+                    </div>
+                    <div class="map-frame interactive-map">
+                        <img src="./static/karta_altyn.png" alt="Altyn-Shor location map" />
+                        <span class="map-marker marker-main">Altyn-Shor</span>
+                        <span class="map-marker marker-route">Route</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section investors-section" id="investors">
+                <div class="section-heading">
+                    <p class="section-kicker">Investors</p>
+                    <h2>Project infrastructure readiness</h2>
+                    <p>
+                        Altyn-Shor is planned as a long-term resort cluster with
+                        the required utility base, including power, water supply
+                        and supporting engineering infrastructure.
+                    </p>
+                </div>
+                <div class="investor-grid">
+                    <article class="info-card">
+                        <h3>Scale</h3>
+                        <p>54 ha of development area and an estimated 35 bn ₽ investment volume.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Accommodation</h3>
+                        <p>About 5,000 rooms across apartments, hotels, sanatorium and chalets.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Demand</h3>
+                        <p>Sheregesh tourist flow may grow to 3 million guests per year by 2030.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section reviews-section" id="reviews">
+                <div class="section-heading">
+                    <p class="section-kicker">Reviews</p>
+                    <h2>Guest expectations</h2>
+                    <p>Reviews will be added after the accommodation facilities open and first guest scenarios are launched.</p>
+                </div>
+                <div class="review-grid">
+                    <blockquote>
+                        <p>The project can connect skiing, walking routes and culture in one place.</p>
+                        <cite>Future guest</cite>
+                    </blockquote>
+                    <blockquote>
+                        <p>For families, a kids club, logistics and year-round activities matter most.</p>
+                        <cite>Family traveler</cite>
+                    </blockquote>
+                    <blockquote>
+                        <p>The wellness and rehabilitation direction makes the resort more than a winter destination.</p>
+                        <cite>Sheregesh guest</cite>
+                    </blockquote>
+                </div>
+            </section>
+
+            <section class="section booking-section" id="booking">
+                <div class="section-grid">
+                    <div class="section-heading inline-heading">
+                        <p class="section-kicker">Contacts / Booking</p>
+                        <h2>Request launch information</h2>
+                        <p>
+                            The first stage is planned for the 2028-2029 season.
+                            Leave a request to receive launch and accommodation
+                            details when they are published.
+                        </p>
+                    </div>
+                    <form class="booking-form" aria-label="Online request form">
+                        <label><span>Name</span><input type="text" name="name" placeholder="Your name" /></label>
+                        <label><span>Phone</span><input type="tel" name="phone" placeholder="+7 000 000-00-00" /></label>
+                        <label>
+                            <span>Format</span>
+                            <select name="room">
+                                <option>Apart-hotel No. 1</option>
+                                <option>4-star hotel</option>
+                                <option>5-star hotel</option>
+                                <option>Sanatorium and clinic</option>
+                                <option>Forest chalets</option>
+                            </select>
+                        </label>
+                        <button class="button button-primary" type="submit">Send request</button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="section news-section" id="news">
+                <div class="section-heading">
+                    <p class="section-kicker">News and offers</p>
+                    <h2>Project updates and events</h2>
+                    <p>This section will be used for launch stages, events and future special offers.</p>
+                </div>
+                <div class="news-grid">
+                    <article class="info-card">
+                        <h3>Seasonal offers</h3>
+                        <p>Winter and summer offers will appear after launch.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Resort events</h3>
+                        <p>Events are planned for the fair square and walking boulevard.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer section">
+            <div class="footer-grid">
+                <div>
+                    <p class="section-kicker">Altyn-Shor</p>
+                    <h2>Sheregesh</h2>
+                    <p>
+                        An all-season resort project in sector F of Sheregesh
+                        with accommodation, wellness, cultural and sport
+                        infrastructure.
+                    </p>
+                </div>
+                <address class="footer-contacts">
+                    <a href="tel:+70000000000">+7 000 000-00-00</a>
+                    <a href="mailto:info@example.com">info@example.com</a>
+                    <span>Legal information will be published before launch.</span>
+                </address>
+            </div>
+        </footer>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
