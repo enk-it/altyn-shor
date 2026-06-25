@@ -177,6 +177,39 @@ main {
   gap: 8px;
 }
 
+.language-switch {
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 4px;
+  padding: 4px;
+  background: rgb(174 209 255 / 22%);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+}
+
+.language-switch a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 38px;
+  min-height: 30px;
+  padding: 5px 8px;
+  color: var(--color-primary);
+  font-size: 0.78rem;
+  font-weight: 800;
+  border-radius: 999px;
+  transition:
+    color var(--transition),
+    background var(--transition);
+}
+
+.language-switch a:hover,
+.language-switch a:focus-visible,
+.language-switch a[aria-current="page"] {
+  color: var(--color-background);
+  background: var(--color-primary);
+}
+
 .site-nav a {
   padding: 9px 12px;
   color: var(--color-text);
@@ -196,6 +229,7 @@ main {
 }
 
 .site-header.is-compact:not(:hover):not(:focus-within) .site-nav,
+.site-header.is-compact:not(:hover):not(:focus-within) .language-switch,
 .site-header.is-compact:not(:hover):not(:focus-within) .brand-subtitle {
   position: absolute;
   pointer-events: none;
@@ -456,7 +490,8 @@ select {
 .room-grid,
 .food-layout,
 .review-grid,
-.news-grid {
+.news-grid,
+.investor-grid {
   display: grid;
   gap: 18px;
   width: min(100%, var(--container));
@@ -776,6 +811,10 @@ select {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.investor-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .pricing-table {
   width: min(100%, var(--container));
   margin: 0 auto;
@@ -901,7 +940,8 @@ select {
   .room-grid,
   .food-layout,
   .review-grid,
-  .news-grid {
+  .news-grid,
+  .investor-grid {
     grid-template-columns: 1fr;
   }
 
@@ -989,6 +1029,26 @@ select {
     padding: 5px 8px;
     font-size: 0.74rem;
   }
+
+  .hero-panel {
+    gap: 10px;
+    padding: 14px;
+  }
+
+  .hero-panel > div {
+    display: grid;
+    gap: 4px;
+    padding: 12px;
+  }
+
+  .stat-number {
+    font-size: 1.45rem;
+    overflow-wrap: anywhere;
+  }
+
+  .stat-label {
+    text-align: left;
+  }
 }
 
 @media (max-width: 760px) {
@@ -1029,6 +1089,7 @@ select {
   }
 
   .site-nav,
+  .language-switch,
   .site-header.is-compact:not(:hover):not(:focus-within) .site-nav {
     display: none;
   }
